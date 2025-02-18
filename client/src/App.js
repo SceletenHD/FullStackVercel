@@ -10,7 +10,7 @@ class App extends React.Component {
         },
       });
 
-      const data = await response.json();
+      const data = await response.text();
       console.log(data);
     } catch (error) {
       console.error('Error fetching data:', error);
